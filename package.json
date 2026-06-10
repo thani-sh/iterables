@@ -1,0 +1,28 @@
+{
+  "name": "@thani-sh/iterables",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thani-sh/iterables.git"
+  }
+}
